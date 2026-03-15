@@ -4,9 +4,7 @@ from models.gnn_model import GNN
 from models.recommender import recommend
 from explainability.path_reasoning import explain_path
 
-# -----------------------------
-# 1. Build the knowledge graph
-# -----------------------------
+# Knowledge Graph
 G = build_graph()
 
 # Convert graph to ML format
@@ -15,17 +13,13 @@ edge_index, node_map = graph_to_edge_index(G)
 # Reverse mapping: index → node name
 index_to_node = {idx: name for name, idx in node_map.items()}
 
-# -----------------------------
-# 2. Initialize model
-# -----------------------------
+# Initialize Model
 model = GNN(num_nodes=len(node_map))
 
 # Generate embeddings
 embeddings = model(edge_index)
 
-# -----------------------------
-# 3. Generate recommendations
-# -----------------------------
+# Generate Recommendation
 user_id = node_map["U1"]  # Change user here if needed
 
 recommended_indices = recommend(user_id, embeddings)
@@ -36,9 +30,7 @@ print("\nRecommendations:")
 for i, node in enumerate(recommended_nodes, 1):
     print(f"{i}. {node} (type: {G.nodes[node]['type']})")
 
-# -----------------------------
-# 4. Explain recommendations
-# -----------------------------
+# Explain Recommendation Path
 print("\nExplanation paths:")
 
 for node in recommended_nodes:
