@@ -2,7 +2,7 @@
 **XAI Recommender System using a Graph Knowledge Base**
 
 ## Overview
-This code implements a simple explainable recommender system built on a knowledge graph and a Graph Neural Network (GNN).The graph is converted into a machine learning format (`edge_index`) and passed into a GNN to generate node embeddings. These embeddings are then used to recommend items for a ueser. The system includes an explainability component that identifies paths in the knowledge graph connecting the user to the recommended items.
+This code implements a simple explainable recommender system built on a knowledge graph and a Graph Neural Network (GNN).The graph is converted and passed into a GNN to generate node embeddings. These embeddings are then used to recommend items for a user. The system includes an explainability component that identifies paths in the knowledge graph connecting the user to the recommended items.
 
 ## Methods
 1. Build Knowledge Graph  Load nodes and edges into a graph `G`  
