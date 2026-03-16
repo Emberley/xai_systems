@@ -9,19 +9,7 @@ Its goal is to improve transparency and interpretability, reducing the "black-bo
 - Analyze model predictions and outputs  
 - Evaluate feature importance and attribution  
 - Visualize model decision behavior through plots and graphs  
-- Modular pipeline for easy experimentation with XAI techniques  
-
-## System Workflow
-1. **Data/Input Processing** – Load datasets or model predictions  
-2. **Model Evaluation** – Assess prediction outputs  
-3. **Explanation Generation** – Compute feature importance and attribution  
-4. **Visualization** – Generate interpretable plots to understand model behavior  
-
-## Technologies
-- Python  
-- NumPy & Pandas  
-- Scikit-learn  
-- Matplotlib & Plotly  
+- Modular pipeline for easy experimentation with XAI techniques 
 
 ## Usage
 Clone the repository and run the analysis with the following commands:
