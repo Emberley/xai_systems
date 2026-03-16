@@ -33,8 +33,4 @@ git clone https://github.com/Emberley/xai_systems.git
 # Install dependencies
 pip install -r requirements.txt
 
-# Run main analysis to generate embeddings and recommendations
-
-
-# Visualize the knowledge graph
 
