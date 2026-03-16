@@ -3,24 +3,7 @@
 ## Overview
 **xai_systems** is a modular framework for **Explainable Artificial Intelligence (XAI)** that combines **knowledge graphs, graph neural networks (GNNs), recommendations, explainability, visualization, and evaluation**.  
 
-The system helps analyze and interpret machine learning predictions by:  
-- Generating embeddings for nodes in a knowledge graph  
-- Making personalized recommendations  
-- Explaining recommendations via paths in the graph  
-- Visualizing graph structures  
-- Evaluating recommendation performance  
-
 This project reduces the “black-box” nature of ML systems by providing interpretable outputs and visual explanations.
-
----
-
-## Key Features
-- Build and manipulate **knowledge graphs** of users/items  
-- Train **Graph Neural Networks (GNNs)** to generate node embeddings  
-- Make **recommendations** for users based on learned embeddings  
-- Explain recommendations via **graph path reasoning**  
-- Visualize knowledge graphs using **NetworkX + Matplotlib**  
-- Evaluate recommendations with metrics like **precision@k**
 
 ---
 
