@@ -1,26 +1,25 @@
-# XAI Systems
+# XAI System
+**XAI Recommender System using a Graph Knowledge Base**
 
 ## Overview
+This code implements a simple explainable recommender system built on a knowledge graph and a Graph Neural Network (GNN).The graph is converted into a machine learning format (`edge_index`) and passed into a GNN to generate node embeddings. These embeddings are then used to recommend items for a ueser. The system includes an explainability component that identifies paths in the knowledge graph connecting the user to the recommended items.
 
-
----
-
-## System Workflow
-1. **Build Knowledge Graph** – Load nodes and edges into a graph `G`  
-2. **Graph → ML Format** – Convert the graph to `edge_index` for the GNN  
-3. **GNN Embeddings** – Train or compute node embeddings  
-4. **Recommendations** – Generate recommended items for a user  
-5. **Explanation** – Compute paths in the graph 
-6. **Visualization** – Draw the graph 
-7. **Evaluation** – Assess recommendation quality using metrics like `precision@k`  
+## Methods
+1. Build Knowledge Graph  Load nodes and edges into a graph `G`  
+2. Convert the graph to `edge_index` for the GNN  
+3. Train or compute node embeddings  
+4. Generate recommended items for a user  
+5. Compute paths in the graph 
+6. Draw the graph 
+7. Assess recommendation quality using metrics like `precision@k`  
 
 ---
 
 ## Technologies
 - Python  
 - NumPy & Pandas  
-- PyTorch / PyTorch Geometric (for GNNs)  
-- NetworkX & Matplotlib (graph visualization)  
+- PyTorch / PyTorch Geometric
+- NetworkX & Matplotlib 
 
 ---
 
@@ -35,7 +34,7 @@ git clone https://github.com/Emberley/xai_systems.git
 pip install -r requirements.txt
 
 # Run main analysis to generate embeddings and recommendations
-python analysis/run_analysis.py
+
 
 # Visualize the knowledge graph
-python visualization/plot_results.py
+
